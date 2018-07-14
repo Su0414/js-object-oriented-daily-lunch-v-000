@@ -100,13 +100,13 @@ class Delivery{
 
   neighborhood(){
     return store.neighborhoods.find(neighborhood => {
-     return neighborhood.id === this.neighborhoodId;
+     return neighborhood.deliveries();
    });
   }
 
   customer(){
     return store.customers.find(customer => {
-     return customer.id === this.customerId;
+     return customer.deliveries;
    });
   }
 
