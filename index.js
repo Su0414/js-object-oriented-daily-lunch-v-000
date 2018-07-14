@@ -24,9 +24,11 @@ class Neighborhood{
   }
 
   deliveries(){
-    return store.deliveries.filter(delivery =>{
+    const our_deliveries = store.deliveries.filter(delivery =>{
        return delivery.neighborhoodId === this.id
      });
+
+     return [...new Set(our_deliveries)];
   }
 
   customers(){
