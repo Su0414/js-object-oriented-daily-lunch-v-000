@@ -54,7 +54,7 @@ class Customer{
   }
   deliveries(){
     debugger;
-    return store.deliveries.filter(delivery => delivery.customer());
+    return store.deliveries.filter(delivery => delivery.customerId === this.id);
     //return [...new Set(uniqueArray)];
   }
 
