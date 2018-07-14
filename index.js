@@ -23,7 +23,7 @@ class Neighborhood{
     store.neighborhoods.push(this)
   }
   deliveries(){
-    const uniqDeliveries =  store.deliveries.filter(delivery => delivery.neighborhoodId === this.id);
+    const uniqDeliveries = store.deliveries.filter(delivery => delivery.neighborhoodId === this.id);
     return [...new Set(uniqDeliveries)];
   }
 
