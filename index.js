@@ -48,7 +48,7 @@ class Customer{
     store.customers.push(this)
   }
   deliveries(){
-    return store.deliveries().filter(delivery => delivery.customer());
+    return store.deliveries.filter(delivery => delivery.customer());
   }
 
   meals() {
