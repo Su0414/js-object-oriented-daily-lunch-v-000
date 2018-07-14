@@ -28,7 +28,8 @@ class Neighborhood{
        return delivery.neighborhoodId === this.id
      });
 
-     return [...new Set(our_deliveries)];
+     //return [...new Set(our_deliveries)];
+     return our_deliveries;
   }
 
   customers(){
