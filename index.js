@@ -53,7 +53,7 @@ class Customer{
     store.customers.push(this)
   }
   deliveries(){
-    //debugger;
+    debugger;
     return store.deliveries.filter(delivery => delivery.customer());
     //return [...new Set(uniqueArray)];
   }
