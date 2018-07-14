@@ -70,7 +70,7 @@ class Meal{
   }
   deliveries(){
     return store.deliveries.filter(delivery => {
-      return delivery.meal();
+      return delivery.mealId === this.id;
     });
   }
   customers(){
