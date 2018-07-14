@@ -28,6 +28,7 @@ class Neighborhood{
        return delivery.neighborhoodId === this.id
      });
 
+     debugger;
      //return [...new Set(our_deliveries)];
      return our_deliveries;
   }
