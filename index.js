@@ -22,8 +22,9 @@ class Neighborhood{
     this.id = neighborhoodId++
     store.neighborhoods.push(this)
   }
+
   deliveries(){
-    return store.deliveries.filter(delivery => delivery.neighborhoodId === this.id;
+    return store.deliveries.filter(delivery => delivery.neighborhoodId === this.id);
   }
 
   customers(){
