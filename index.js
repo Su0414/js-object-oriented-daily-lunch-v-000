@@ -114,7 +114,7 @@ class Delivery{
 
   customer(){
     return store.customers.find(customer => {
-     return customer.deliveries;
+     return customer.id === this.customerId;
    });
   }
 
