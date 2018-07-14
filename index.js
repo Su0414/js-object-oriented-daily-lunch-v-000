@@ -24,7 +24,8 @@ class Neighborhood{
   }
 
   deliveries(){
-    return store.deliveries.filter(delivery => delivery.neighborhoodId === this.id);
+    const uniqueArray = Array.from(new Set(store.deliveries));
+    return uniqueArray.filter(delivery => delivery.neighborhoodId === this.id);
   }
 
   customers(){
