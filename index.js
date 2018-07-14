@@ -48,7 +48,8 @@ class Customer{
     store.customers.push(this)
   }
   deliveries(){
-    return store.deliveries.filter(delivery => delivery.customer());
+    const uniqueArray = store.deliveries.filter(delivery => delivery.customer());
+    return [...new Set(uniqueArray)];
   }
 
   meals() {
