@@ -52,9 +52,7 @@ class Customer{
   }
 
   meals() {
-     //return this.meals().map(delivery => delivery.meal());
-     return store.meals.filter(meal => meal.customerId === this.id);
-
+      return this.deliveries().map(delivery => delivery.meal());
    }
 
    totalSpent() {
